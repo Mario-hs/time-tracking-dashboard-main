@@ -5,16 +5,16 @@ body {
     background-color: $very-dark-blue;
 
     header {
-        width: 80vw;
-        height: 180px;
-        margin: 100px auto 25px;
+        width: 87vw;
+        height: 203px;
+        margin: 80px auto 25px;
 
         background-color: $dark-blue;
         border-radius: 1rem;
 
         .container_user {
             width: 100%;
-            height: 120px;
+            height: 133px;
 
             background-color: $blue;
             border-radius: 1rem;
@@ -23,7 +23,7 @@ body {
             align-items: center;
 
             img {
-                width: 65px;
+                width: 70px;
                 margin-left: 30px;
                 border: solid $white;
                 border-radius: 50%;
@@ -34,12 +34,13 @@ body {
                 
                 p {
                     margin-top: 5px;
+                    font-size: $font-user;
                 }
             }
         }
 
         .nav {
-            height: 60px;
+            height: 70px;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -52,8 +53,8 @@ body {
 
     main {
         .container {
-            width: 80vw;
-            height: 145px;
+            width: 87vw;
+            height: 160px;
             margin: 20px auto;
 
             display: flex;
@@ -63,11 +64,11 @@ body {
             
             .container_data {
                 width: 100%;
-                height: 110px;
+                height: 120px;
 
                 background-color: $dark-blue;
                 border-radius: 0.9rem;
-
+                padding: 28px 23px;
 
             }
 
@@ -77,21 +78,21 @@ body {
             background-color: $light-red-work;
             background-image: url('../projeto/images/icon-work.svg');
             background-repeat: no-repeat;
-            background-position: 90% -25%;
+            background-position: 90% -15%;
         }
 
         .play {
             background-color: $soft-blue-play;
             background-image: url('../projeto/images/icon-play.svg');
             background-repeat: no-repeat;
-            background-position: 90% -10%;
+            background-position: 90% -5%;
         }
         
         .study {
             background-color: $light-red-study;
             background-image: url('../projeto/images/icon-study.svg');
             background-repeat: no-repeat;
-            background-position: 90% -15%;
+            background-position: 90% -10%;
         }
 
         .exercise {
@@ -105,14 +106,14 @@ body {
             background-color: $violet-social;
             background-image: url('../projeto/images/icon-social.svg');
             background-repeat: no-repeat;
-            background-position: 90% -35%;
+            background-position: 90% -23%;
         }
 
         .self_care {
             background-color: $soft-orange-self-care;
             background-image: url('../projeto/images/icon-self-care.svg');
             background-repeat: no-repeat;
-            background-position: 90% -20%;
+            background-position: 90% -10%;
         }
         
     }
