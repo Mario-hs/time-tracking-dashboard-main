@@ -52,6 +52,7 @@ body {
     }
 
     main {
+        margin-bottom: 50px;
         .container {
             width: 87vw;
             height: 160px;
@@ -70,8 +71,19 @@ body {
                 border-radius: 0.9rem;
                 padding: 28px 23px;
 
-            }
+                .block {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
+                    :first-child {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                
+
+            }
         }
 
         .work {
@@ -119,8 +131,101 @@ body {
     }
     
     footer {
+        margin: 10px auto 30px;
         font-size: 11px;
         text-align: center;
+
         a { color: hsl(228, 45%, 44%) }
-      }
+    }
+}
+
+@media (min-width: 1024px){
+    body {
+        display: grid;
+        grid-template-columns: 185px 3fr;
+        justify-content: center;
+        column-gap: 20px;
+
+        max-width: 75vw;
+        margin: 18% auto;
+
+        span {
+            font-size: 12px;
+        }
+
+        header {
+            width: 185px;
+            height: auto;
+            margin: 0px;
+
+            .container_user {
+                height: 265px;
+                display: block;
+                padding: 24px 20px;
+
+                img {
+                    width: 65px;
+                    margin: 0px;
+                }
+
+                .info_user {
+                    margin: 30px 0px;
+
+                    
+                    
+                    p {
+                        margin-top: 0px;
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            .nav {
+                height: 95px;
+                margin: 10px auto;
+                padding: 0px 20px;
+                flex-direction: column;
+                align-items: flex-start;
+
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        main {
+            margin-bottom: 0px;
+            display: grid;
+            grid-template-columns: repeat(3, 185px);
+            gap: 20px;
+
+            .container {
+                width: 185px;
+                height: 180px;
+                margin: 0px auto;
+
+                .container_data {
+                    width: 185px;
+                    height: 150px;
+                    padding: 23px;
+
+                    .block {
+                        margin-bottom: 15px;
+
+                        h1 {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .info {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        footer {
+            display: none;
+        }
+    }
 }
