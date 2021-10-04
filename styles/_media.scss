@@ -1,12 +1,11 @@
 @media (min-width: 1024px){
     body {
-        display: grid;
-        grid-template-columns: 185px 3fr;
-        justify-content: center;
+        display: flex;
         column-gap: 20px;
 
         max-width: 800px;
-        margin: 200px auto;
+        max-height: 400px;
+        margin: auto;
 
         span {
             font-size: 12px;
