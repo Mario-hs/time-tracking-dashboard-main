@@ -1,148 +1,154 @@
 @import './reset.scss';
 
-body {
-    background-color: $very-dark-blue;
+html {
+    height: 100vh;
+    display: flex;
 
-    header {
-        width: 87vw;
-        height: 203px;
-        margin: 80px auto 25px;
-
-        background-color: $dark-blue;
-        border-radius: 1rem;
-
-        .container_user {
-            width: 100%;
-            height: 133px;
-
-            background-color: $blue;
-            border-radius: 1rem;
-
-            display: flex;
-            align-items: center;
-
-            img {
-                width: 70px;
-                margin-left: 30px;
-                border: solid $white;
-                border-radius: 50%;
-            }
-
-            .info_user {
-                margin-left: 15px;
-                
-                p {
-                    margin-top: 5px;
-                    font-size: $font-user;
-                }
-            }
-        }
-
-        .nav {
-            height: 70px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            .active {
-                color: $white;
-            }
-        }
-
-    }
-
-    main {
-        margin-bottom: 50px;
-        .container {
+    body {
+        background-color: $very-dark-blue;
+        margin: auto;
+    
+        header {
             width: 87vw;
-            height: 160px;
-            margin: 20px auto;
-
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column;
-            align-items: self-end;
-
+            height: 203px;
+            margin: 80px auto 25px;
+    
+            background-color: $dark-blue;
             border-radius: 1rem;
-            
-            .container_data {
+    
+            .container_user {
                 width: 100%;
-                height: 120px;
-
-                background-color: $dark-blue;
-                border-radius: 0.9rem;
-                padding: 28px 23px;
-
-                .block {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    :first-child {
-                        margin: 5px 0px;
-                    }
-
-                    img {
-                        cursor: pointer;
-                        padding: 5px 0px;
+                height: 133px;
+    
+                background-color: $blue;
+                border-radius: 1rem;
+    
+                display: flex;
+                align-items: center;
+    
+                img {
+                    width: 70px;
+                    margin-left: 30px;
+                    border: solid $white;
+                    border-radius: 50%;
+                }
+    
+                .info_user {
+                    margin-left: 15px;
+                    
+                    p {
+                        margin-top: 5px;
+                        font-size: $font-user;
                     }
                 }
-
-                
-
             }
+    
+            .nav {
+                height: 70px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .active {
+                    color: $white;
+                }
+            }
+    
         }
-
-        .work {
-            background-color: $light-red-work;
-            background-image: url('../projeto/images/icon-work.svg');
-            background-repeat: no-repeat;
-            background-position: 90% -15%;
-        }
-
-        .play {
-            background-color: $soft-blue-play;
-            background-image: url('../projeto/images/icon-play.svg');
-            background-repeat: no-repeat;
-            background-position: 90% -5%;
+    
+        main {
+            margin-bottom: 50px;
+            .container {
+                width: 87vw;
+                height: 160px;
+                margin: 20px auto;
+    
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                align-items: self-end;
+    
+                border-radius: 1rem;
+                
+                .container_data {
+                    width: 100%;
+                    height: 120px;
+    
+                    background-color: $dark-blue;
+                    border-radius: 0.9rem;
+                    padding: 28px 23px;
+    
+                    .block {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+    
+                        :first-child {
+                            margin: 5px 0px;
+                        }
+    
+                        img {
+                            cursor: pointer;
+                            padding: 5px 0px;
+                        }
+                    }
+    
+                    
+    
+                }
+            }
+    
+            .work {
+                background-color: $light-red-work;
+                background-image: url('../projeto/images/icon-work.svg');
+                background-repeat: no-repeat;
+                background-position: 90% -15%;
+            }
+    
+            .play {
+                background-color: $soft-blue-play;
+                background-image: url('../projeto/images/icon-play.svg');
+                background-repeat: no-repeat;
+                background-position: 90% -5%;
+            }
+            
+            .study {
+                background-color: $light-red-study;
+                background-image: url('../projeto/images/icon-study.svg');
+                background-repeat: no-repeat;
+                background-position: 90% -10%;
+            }
+    
+            .exercise {
+                background-color: $lime-green-exercise;
+                background-image: url('../projeto/images/icon-exercise.svg');
+                background-repeat: no-repeat;
+                background-position: 90% 0%;
+            }
+    
+            .social {
+                background-color: $violet-social;
+                background-image: url('../projeto/images/icon-social.svg');
+                background-repeat: no-repeat;
+                background-position: 90% -23%;
+            }
+    
+            .self_care {
+                background-color: $soft-orange-self-care;
+                background-image: url('../projeto/images/icon-self-care.svg');
+                background-repeat: no-repeat;
+                background-position: 90% -10%;
+            }
+            
         }
         
-        .study {
-            background-color: $light-red-study;
-            background-image: url('../projeto/images/icon-study.svg');
-            background-repeat: no-repeat;
-            background-position: 90% -10%;
+        footer {
+            margin: 10px auto 30px;
+            font-size: 11px;
+            text-align: center;
+    
+            a { color: hsl(228, 45%, 44%) }
         }
-
-        .exercise {
-            background-color: $lime-green-exercise;
-            background-image: url('../projeto/images/icon-exercise.svg');
-            background-repeat: no-repeat;
-            background-position: 90% 0%;
-        }
-
-        .social {
-            background-color: $violet-social;
-            background-image: url('../projeto/images/icon-social.svg');
-            background-repeat: no-repeat;
-            background-position: 90% -23%;
-        }
-
-        .self_care {
-            background-color: $soft-orange-self-care;
-            background-image: url('../projeto/images/icon-self-care.svg');
-            background-repeat: no-repeat;
-            background-position: 90% -10%;
-        }
-        
     }
     
-    footer {
-        margin: 10px auto 30px;
-        font-size: 11px;
-        text-align: center;
-
-        a { color: hsl(228, 45%, 44%) }
-    }
+    @import './media.scss';
 }
-
-@import './media.scss';

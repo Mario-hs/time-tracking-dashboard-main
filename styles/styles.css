@@ -41,11 +41,19 @@ body {
   color: white;
 }
 
-body {
-  background-color: #0f1424;
+html {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-body header {
+html body {
+  background-color: #0f1424;
+  margin: auto;
+}
+
+html body header {
   width: 87vw;
   height: 203px;
   margin: 80px auto 25px;
@@ -53,7 +61,7 @@ body header {
   border-radius: 1rem;
 }
 
-body header .container_user {
+html body header .container_user {
   width: 100%;
   height: 133px;
   background-color: #5847eb;
@@ -66,23 +74,23 @@ body header .container_user {
           align-items: center;
 }
 
-body header .container_user img {
+html body header .container_user img {
   width: 70px;
   margin-left: 30px;
   border: solid white;
   border-radius: 50%;
 }
 
-body header .container_user .info_user {
+html body header .container_user .info_user {
   margin-left: 15px;
 }
 
-body header .container_user .info_user p {
+html body header .container_user .info_user p {
   margin-top: 5px;
   font-size: 24px;
 }
 
-body header .nav {
+html body header .nav {
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,15 +102,15 @@ body header .nav {
           align-items: center;
 }
 
-body header .nav .active {
+html body header .nav .active {
   color: white;
 }
 
-body main {
+html body main {
   margin-bottom: 50px;
 }
 
-body main .container {
+html body main .container {
   width: 87vw;
   height: 160px;
   margin: 20px auto;
@@ -122,7 +130,7 @@ body main .container {
   border-radius: 1rem;
 }
 
-body main .container .container_data {
+html body main .container .container_data {
   width: 100%;
   height: 120px;
   background-color: #1c1f4a;
@@ -130,7 +138,7 @@ body main .container .container_data {
   padding: 28px 23px;
 }
 
-body main .container .container_data .block {
+html body main .container .container_data .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,69 +150,69 @@ body main .container .container_data .block {
           align-items: center;
 }
 
-body main .container .container_data .block :first-child {
+html body main .container .container_data .block :first-child {
   margin: 5px 0px;
 }
 
-body main .container .container_data .block img {
+html body main .container .container_data .block img {
   cursor: pointer;
   padding: 5px 0px;
 }
 
-body main .work {
+html body main .work {
   background-color: #ff8c66;
   background-image: url("../projeto/images/icon-work.svg");
   background-repeat: no-repeat;
   background-position: 90% -15%;
 }
 
-body main .play {
+html body main .play {
   background-color: #56c2e6;
   background-image: url("../projeto/images/icon-play.svg");
   background-repeat: no-repeat;
   background-position: 90% -5%;
 }
 
-body main .study {
+html body main .study {
   background-color: #ff5c7c;
   background-image: url("../projeto/images/icon-study.svg");
   background-repeat: no-repeat;
   background-position: 90% -10%;
 }
 
-body main .exercise {
+html body main .exercise {
   background-color: #4acf81;
   background-image: url("../projeto/images/icon-exercise.svg");
   background-repeat: no-repeat;
   background-position: 90% 0%;
 }
 
-body main .social {
+html body main .social {
   background-color: #7536d3;
   background-image: url("../projeto/images/icon-social.svg");
   background-repeat: no-repeat;
   background-position: 90% -23%;
 }
 
-body main .self_care {
+html body main .self_care {
   background-color: #f1c65b;
   background-image: url("../projeto/images/icon-self-care.svg");
   background-repeat: no-repeat;
   background-position: 90% -10%;
 }
 
-body footer {
+html body footer {
   margin: 10px auto 30px;
   font-size: 11px;
   text-align: center;
 }
 
-body footer a {
+html body footer a {
   color: #3e52a3;
 }
 
 @media (min-width: 1024px) {
-  body {
+  html body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 185px 3fr;
@@ -217,31 +225,31 @@ body footer a {
     max-width: 800px;
     margin: 200px auto;
   }
-  body span {
+  html body span {
     font-size: 12px;
   }
-  body header {
+  html body header {
     width: 185px;
     height: auto;
     margin: 0px;
   }
-  body header .container_user {
+  html body header .container_user {
     height: 265px;
     display: block;
     padding: 24px 20px;
   }
-  body header .container_user img {
+  html body header .container_user img {
     width: 65px;
     margin: 0px;
   }
-  body header .container_user .info_user {
+  html body header .container_user .info_user {
     margin: 30px 0px;
   }
-  body header .container_user .info_user p {
+  html body header .container_user .info_user p {
     margin-top: 0px;
     font-size: 28px;
   }
-  body header .nav {
+  html body header .nav {
     height: 95px;
     margin: 10px auto;
     padding: 0px 20px;
@@ -253,10 +261,10 @@ body footer a {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  body header .nav button {
+  html body header .nav button {
     font-size: 14px;
   }
-  body main {
+  html body main {
     margin-bottom: 0px;
     display: -ms-grid;
     display: grid;
@@ -264,26 +272,26 @@ body footer a {
         grid-template-columns: repeat(3, 185px);
     gap: 20px;
   }
-  body main .container {
+  html body main .container {
     width: 185px;
     height: 180px;
     margin: 0px auto;
   }
-  body main .container .container_data {
+  html body main .container .container_data {
     width: 185px;
     height: 150px;
     padding: 23px;
   }
-  body main .container .container_data .block {
+  html body main .container .container_data .block {
     margin-bottom: 15px;
   }
-  body main .container .container_data .block h1 {
+  html body main .container .container_data .block h1 {
     font-size: 14px;
   }
-  body main .container .container_data .info {
+  html body main .container .container_data .info {
     display: block;
   }
-  body footer {
+  html body footer {
     display: none;
   }
 }
