@@ -25,9 +25,9 @@
     </div>
 
     <div class="nav">
-      <button>Daily</button>
-      <button class="active">Weekly</button>
-      <button>Monthly</button>
+      <button id="daily" onclick="serverData.handleData(1)">Daily</button>
+      <button id="weekly" class="active" onclick="serverData.handleData(2)">Weekly</button>
+      <button id="monthly" onclick="serverData.handleData(3)">Monthly</button>
     </div>
   </header>
 
