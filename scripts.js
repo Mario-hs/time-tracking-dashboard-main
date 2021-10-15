@@ -1,3 +1,4 @@
+// Função para ler os dados do arquivo data.json e distribuir entre dia, semana e mês
 async function getData(value) {
     try {
         let request = await fetch('./data.json')
@@ -22,6 +23,7 @@ async function getData(value) {
     }
 }
 
+// Função para mostrar os dados na tela
 function showData(data, time) {
     let output = ''
     if (time === 'daily') {
@@ -42,6 +44,7 @@ function showData(data, time) {
     }
 }
 
+// Função para trocar o botão de destaque colocando a classe active
 function handleActiveButton(time) {
     if (time === 'daily') {
         document.querySelector('#daily').classList.add('active')

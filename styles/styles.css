@@ -104,6 +104,7 @@ html body header .nav {
 
 html body header .nav .active {
   color: white;
+  font-weight: 500;
 }
 
 html body main {
