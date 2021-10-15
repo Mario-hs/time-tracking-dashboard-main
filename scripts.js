@@ -1,53 +1,36 @@
-getData()
-function getData() {
-    let request = new XMLHttpRequest()
-    let url = 'data.json'
+async function getData(value) {
+    try {
+        let request = await fetch('./data.json')
+        let data = await request.json()
 
-    request.open('GET', url)
-    request.responseType = 'json';
-    request.onreadystatechange = function () {
-        let status = request.status
-        if (status === 200) {
-            if (request.response != null) {
-                let data = request.response
-                console.log("i")
-
-                serverData(data)
+        data.map((props) => {
+            let time = value
+            console.log('>', props)
+            if (time == 1) {
+                console.log('>>', props.timeframes.daily)
+                handleActiveButton('daily')
+            } else if (time == 2) {
+                console.log('>>', props.timeframes.weekly)
+                handleActiveButton('weekly')
+            } else {
+                console.log('>>', props.timeframes.monthly)
+                handleActiveButton('monthly')
             }
-        } else {
-            return null
-        }
+        })
+    } catch (error) {
+        console.error(error)
     }
-    request.send()
 }
 
-// function handleData(props) {
+function handleActiveButton(time) {
+    // document.querySelector('#daily').classList.remove('active')
+    // document.querySelector('#weekly').classList.remove('active')
+    // document.querySelector('#monthly').classList.remove('active')
 
-//     // getData(serverData)
-
-//     console.log(props)
-//     // console.log(serverData)
-//     return props
-// }
-
-const serverData = (db) => {
-    function handleData(props) {
-
-        if (props == 1) {
-            console.log("dia")
-        } else if (props == 2) {
-            console.log("semana")
-        } else if (props == 3) {
-            console.log("mês")
-        }
-
-        console.log(props)
-        // console.log(serverData)
-        return props
+    if (document.querySelector(`#${time}`) != time) {
+        document.querySelector(`#${time}`).classList.add('active')
     }
-
-
-    console.log(db)
-    let data = db
-    return data
 }
+
+
+getData(2)
