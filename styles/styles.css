@@ -162,42 +162,42 @@ html body main .container .container_data .block img {
 
 html body main .work {
   background-color: #ff8c66;
-  background-image: url("../projeto/images/icon-work.svg");
+  background-image: url("../project/images/icon-work.svg");
   background-repeat: no-repeat;
   background-position: 90% -15%;
 }
 
 html body main .play {
   background-color: #56c2e6;
-  background-image: url("../projeto/images/icon-play.svg");
+  background-image: url("../project/images/icon-play.svg");
   background-repeat: no-repeat;
   background-position: 90% -5%;
 }
 
 html body main .study {
   background-color: #ff5c7c;
-  background-image: url("../projeto/images/icon-study.svg");
+  background-image: url("../project/images/icon-study.svg");
   background-repeat: no-repeat;
   background-position: 90% -10%;
 }
 
 html body main .exercise {
   background-color: #4acf81;
-  background-image: url("../projeto/images/icon-exercise.svg");
+  background-image: url("../project/images/icon-exercise.svg");
   background-repeat: no-repeat;
   background-position: 90% 0%;
 }
 
 html body main .social {
   background-color: #7536d3;
-  background-image: url("../projeto/images/icon-social.svg");
+  background-image: url("../project/images/icon-social.svg");
   background-repeat: no-repeat;
   background-position: 90% -23%;
 }
 
 html body main .self_care {
   background-color: #f1c65b;
-  background-image: url("../projeto/images/icon-self-care.svg");
+  background-image: url("../project/images/icon-self-care.svg");
   background-repeat: no-repeat;
   background-position: 90% -10%;
 }
